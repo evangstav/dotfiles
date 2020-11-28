@@ -1,0 +1,12 @@
+[
+  {
+    "uid": "9eb1b98a-5292-4c9e-b989-e80c55315334",
+    "todo": {
+      "desc": "Something",
+      "date": "Wed Apr 15 2020 17:38:01 GMT+0200 (Central European Summer Time)",
+      "status": "active",
+      "remind": true,
+      "due": "Wed Apr 15 2020 17:38:00 GMT+0200 (Central European Summer Time)"
+    }
+  }
+]

@@ -1,0 +1,69 @@
+#
+# wm independent hotkeys
+#
+
+# terminal emulator
+super + Return
+	alacritty
+
+#scratchpad
+control + u
+    scratchpad.sh
+
+
+control + space
+	dmenu_run -fn 'Source Code Pro:size=12' -nb '#1d2020' -nf '#ebdbb2' -sb '#504945' -sf '#fbf1c7'
+
+# Clipboard
+control + p ; c
+	clipmenu -i -fn 'Source Code Pro:size=12' -nb '#1d2020' -nf '#ebdbb2' -sb '#504945' -sf '#fbf1c7'
+
+#Screenshots
+control + p ; s
+    dmenu-scrot.sh
+
+# Network
+control + p ; n
+	networkmanager_dmenu -fn 'Source Code Pro:size=12' -nb '#1d2020' -nf '#ebdbb2' -sb '#504945' -sf '#fbf1c7'
+
+
+# Password -- Colors are set up in /usr/bin
+control + p ; p
+	dmenu-lpass-nu 
+
+# Window Menu -- Colors are set up in /usr/bin
+control + p ; w
+	windowmenu.sh
+
+
+# Bluetooth devices -- Colors are set up in /usr/bin
+control + p ; b
+	btmenu 
+
+# Lock screen
+control + p ; l
+	slock 
+
+
+# make sxhkd reload its configuration files:
+super + Escape
+	pkill -USR1 -x sxhkd
+
+# My keybindings
+# Emacs
+control + e ; e
+		emacsclient -c -a ''
+control + e ; b
+		emacsclient -c -a '' --eval '(ibuffer)'
+control + e ; d
+		emacsclient -c -a '' --eval '(dired nil)'
+
+super + {equal,minus,m}
+    amixer set Master {5%+,5%-,toggle}
+
+alt + {equal,minus}
+    xbacklight {+10,-10}
+
+# Chrome
+super + g
+	  google-chrome-unstable

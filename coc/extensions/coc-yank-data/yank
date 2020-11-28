@@ -1,0 +1,934 @@
+f56b53e412e87751f665cb9f9061e50b|file:///home/evangelos/workspace/Haskell/NNFromScratch/first_neuron.hs|36|18|v|haskell
+	layer
+1a7742ad259e62355b977c4778be1ddd|file:///home/evangelos/workspace/Haskell/NNFromScratch/first_neuron.hs|9|29|V|haskell
+	weights = [weights1, weights2, weights3]
+	biases = [bias1, bias2, bias3]
+78ff3953762c2a0a9d92b9ff2499cc2e|file:///home/evangelos/workspace/Haskell/NNFromScratch/first_neuron.hs|15|1|V|haskell
+	dotProduct x y = sum $ zipWith (*) x y
+157e7b59f989452493ea251986ec4b22|file:///home/evangelos/workspace/Haskell/NNFromScratch/first_neuron.hs|24|24|V|haskell
+	denseLayer size inputs= 
+64663f4646781c9c0110838b905daa23|file:///home/evangelos/workspace/Haskell/NNFromScratch/NN-from-scratch/first_neuron.hs|1|13|v|haskell
+	Random
+afc183c0b39d8cafbbea0342ad9c9b0b|file:///home/evangelos/workspace/Haskell/NNFromScratch/NN-from-scratch/first_neuron.hs|1|9|V|haskell
+	import Da
+5b8d02633bc78ebf5ddf35d4c88a5509|file:///home/evangelos/workspace/Haskell/NNFromScratch/NN-from-scratch/stack.yaml|43|1|v|yaml
+	     - random-1.2.0@sha256:4321209c8faedc034810ea8ed0dbc4a36f1a1df97b75af024219f2f533da57de,6094
+9ba40b676c9f3eb11766497b14665625|file:///home/evangelos/workspace/Haskell/NN-from-scratch/stack.yaml|39|1|V|yaml
+	 - acme-missiles-0.3
+315dd75e16889727fc8d4a69e4dd2b5b|file:///home/evangelos/workspace/Haskell/NN-from-scratch/stack.yaml|39|1|V|yaml
+	 - git: https://github.com/commercialhaskell/stack.git
+51be5730bc8817c0669dd7ea28dfb21f|file:///home/evangelos/workspace/Haskell/NN-from-scratch/stack.yaml|39|1|V|yaml
+	   commit: e7b331f14bcffb8367cd58fbfc8b40ec7642100a
+fc3bc7a079dd758d63c5a0e8bdfc47a5|file:///home/evangelos/workspace/Haskell/NN-from-scratch/stack.yaml|39|1|V|yaml
+	 - random-1.2.0@sha256:4321209c8faedc034810ea8ed0dbc4a36f1a1df97b75af024219f2f533da57de,6094
+fc716c4e1590a8c7742a18cd878c4560|file:///home/evangelos/workspace/Haskell/NN-from-scratch/stack.yaml|39|1|V|yaml
+	 - random-source-0.3.0.11@sha256:f78e361474d648fb0e0112d895c3a4bca80b1e565b778d763d59614270e8779c,3132
+ab119d294ae0633507aea0ceb8b1c759|file:///home/evangelos/workspace/Haskell/NN-from-scratch/stack.yaml|39|1|V|yaml
+	 - rvar-0.2.0.6@sha256:d07cbb734ec307539fb58d4344b2284a1a91f41c9308f437c27ae8bada2111bf,2317
+5006f77b020e0d1dded77a1d917b7e7b|file:///home/evangelos/workspace/Haskell/NN-from-scratch/stack.yaml|39|1|V|yaml
+	 - flexible-defaults-0.0.3@sha256:6a7ab000561e1075003cb1053dfbbb4020ae2b02916776d1479c9c3fc82f5d0d,2508
+a3393318b02bfd02cae26fbb56979a5f|file:///home/evangelos/workspace/Haskell/NN-from-scratch/app/Main.hs|1|1|V|haskell
+	import Data.Random.Normal
+25ef3f30bb2fdf74e160a91b7e804912|file:///home/evangelos/workspace/Haskell/NN-from-scratch/package.yaml|29|1|V|yaml
+	  NN-from-scratch-exe:
+	    main:                Main.hs
+	    source-dirs:         app
+	    ghc-options:
+	    - -threaded
+	    - -rtsopts
+	    - -with-rtsopts=-N
+	    dependencies:
+	    - NN-from-scratch
+1d02cdfb81b942df7eeda83e798c00bb|file:///home/evangelos/workspace/Haskell/NN-from-scratch/stack.yaml|39|10|V|yaml
+	  - random
+f6068daa29dbb05a7ead1e3b5a48bbee|file:///home/evangelos/workspace/Haskell/NNFromScratch/first_neuron.hs|1|8|v|haskell
+	Data
+960b44c579bc2f6818d2daaf9e4c16f0|file:///home/evangelos/workspace/Haskell/NNFromScratch/first_neuron.hs|1|22|v|haskell
+	Normal
+5234bbd0992d366d58d7fa4b0e1bf163|file:///home/evangelos/workspace/Haskell/NNFromScratch/first_neuron.hs|1|1|V|haskell
+	import System.Random
+f2b1f2d8357f7528659785f61faf886b|file:///home/evangelos/workspace/Haskell/NNFromScratch/first_neuron.hs|3|1|v|haskell
+	newRand
+22ae0e2b89e5e3d477f988cc36d3272b|file:///home/evangelos/workspace/Haskell/NNFromScratch/first_neuron.hs|5|15|v|haskell
+	Float
+fe4c0f30aa359c41d9f9a5f69c8c4192|file:///home/evangelos/workspace/Haskell/NNFromScratch/first_neuron.hs|8|19|v|haskell
+	seed
+02e31a1254c3b8c88c41a84937509a3f|file:///home/evangelos/workspace/Haskell/NNFromScratch/first_neuron.hs|8|9|V|haskell
+	take 1 randomList ( seed )
+8ed1123ea380d3b83f48452596edadce|file:///home/evangelos/workspace/Haskell/NNFromScratch/first_neuron.hs|8|20|v|haskell
+	(seed)
+06031affd2a3cc08a2e280a26bb1fbad|file:///home/evangelos/workspace/Haskell/NNFromScratch/first_neuron.hs|3|8|v|haskell
+	randomIO 
+7f8a60688bbd068f06260d6f08d84c7b|file:///home/evangelos/workspace/Haskell/NNFromScratch/first_neuron.hs|8|1|v|haskell
+	list1
+8756270a187befe733e0efd7845ff11b|file:///home/evangelos/workspace/Haskell/NNFromScratch/first_neuron.hs|10|15|V|haskell
+	randomList seed
+b6e983092fab073e5e1fafcd5cc25304|file:///home/evangelos/workspace/Haskell/NNFromScratch/first_neuron.hs|10|1|V|haskell
+	pureGen = mkStdGen 137
+fadff6c4a2767262a16fdd3df4c23170|file:///home/evangelos/workspace/Haskell/NNFromScratch/first_neuron.hs|10|1|V|haskell
+	uniformR (0 :: Float, 1 :: Float) pureGen
+def36b726efed529b13ba240dd331a12|file:///home/evangelos/workspace/Haskell/NNFromScratch/first_neuron.hs|8|7|v|haskell
+	Pool
+ca8c9dc13dbfc184173d81c9d169c738|file:///home/evangelos/workspace/Haskell/NNFromScratch/first_neuron.hs|8|7|v|haskell
+	ListInt
+cdada77f98961e11aedc109e81d23497|file:///home/evangelos/workspace/Haskell/NNFromScratch/first_neuron.hs|8|27|V|haskell
+	randomFloat :: Int -> Float
+67d9847369a5f9ba22c4ed959638b5ad|file:///home/evangelos/workspace/Haskell/NNFromScratch/first_neuron.hs|8|49|V|haskell
+	randomFloat seed = randoms (mkStdGen seed) :: Int
+880896f1bb7311feafdf509275b427b0|file:///home/evangelos/workspace/Haskell/NNFromScratch/first_neuron.hs|10|23|v|haskell
+	randomPool
+78d8400be6ecf8917daac889efce4297|file:///home/evangelos/workspace/Haskell/NNFromScratch/first_neuron.hs|19|27|V|haskell
+	weights1 = [0.2, 0.8, -0.5]
+bda84634449f0cfd908a545e3169e21c|file:///home/evangelos/workspace/Haskell/NNFromScratch/first_neuron.hs|19|26|V|haskell
+	weights2 = [0.4, 1.8, 0.5]
+cc10a2f6eb91b8059633b28590a02dde|file:///home/evangelos/workspace/Haskell/NNFromScratch/first_neuron.hs|19|26|V|haskell
+	weights3 = [0.8, -0.1, 1.3]
+d265aed699f7409ac0ec6fe07ee9cb11|file:///home/evangelos/workspace/Haskell/NNFromScratch/first_neuron.hs|35|32|v|haskell
+	batch
+0298f55b0009d65bc2b11d0eeb689af5|file:///home/evangelos/workspace/Haskell/NNFromScratch/first_neuron.hs|33|12|v|haskell
+	neuron w b i
+55b84a9d317184fe61224bfb4a060fb0|file:///home/evangelos/workspace/Haskell/NNFromScratch/first_neuron.hs|15|10|v|haskell
+	1,2,3
+e145184f5cf719e05d5d3d5964966271|file:///home/evangelos/workspace/Haskell/NNFromScratch/first_neuron.hs|35|32|V|haskell
+	                          i <- inputs 
+a43c1b0aa53a0c908810c06ab1ff3967|file:///home/evangelos/workspace/Haskell/NNFromScratch/first_neuron.hs|21|33|v|haskell
+	input
+54c001fb5372c3e95bffb13e63e6f291|file:///home/evangelos/workspace/Haskell/NNFromScratch/first_neuron.hs|24|9|V|haskell
+	bias1 = 2
+08d5f391575a0e509f49ca989376ae6c|file:///home/evangelos/workspace/Haskell/NNFromScratch/first_neuron.hs|24|9|V|haskell
+	bias2 = 6
+bca9ed777bf56c5911d377b3d3904118|file:///home/evangelos/workspace/Haskell/NNFromScratch/first_neuron.hs|24|9|V|haskell
+	bias3 = 1
+a7e9d075013822a1ca03f2163e78b8a5|file:///home/evangelos/workspace/Haskell/NNFromScratch/first_neuron.hs|26|1|V|haskell
+	weights = [weights1, weights2, weights3]
+6069ad9b6f8db5a6f4948ff6f374cece|file:///home/evangelos/workspace/Haskell/NNFromScratch/first_neuron.hs|26|1|V|haskell
+	biases = [bias1, bias2, bias3]
+8831731b52fdc6cb7f162f9767d66e4d|file:///home/evangelos/workspace/Haskell/NNFromScratch/first_neuron.hs|23|15|v|haskell
+	Weights
+12eac1e4f46fa99826078fff17906070|file:///home/evangelos/workspace/Haskell/NNFromScratch/first_neuron.hs|26|24|V|haskell
+	neuron weights bias inputs = (+) bias $ dotProduct inputs weights
+3b384210937789e49f212bb197c35adf|file:///home/evangelos/workspace/Haskell/NNFromScratch/first_neuron.hs|22|1|V|haskell
+	genWeights input = genNumbers $ length input
+50091d2d10dd3d88be6bb897af20b2ff|file:///home/evangelos/workspace/Haskell/NNFromScratch/first_neuron.hs|26|12|v|haskell
+	head 
+318f64ab7f4bf880d8afa7487640eabd|file:///home/evangelos/workspace/Haskell/NNFromScratch/first_neuron.hs|26|12|v|haskell
+	genNumbers 10
+2c66f2e750470c7eaf35e5e6cba82f85|file:///home/evangelos/workspace/Haskell/NNFromScratch/first_neuron.hs|32|39|V|haskell
+	fancyMap neuron = zipWith $ map . neuron
+b53bf4d4f2ba3c6740e935e171de5e96|file:///home/evangelos/workspace/Haskell/NNFromScratch/first_neuron.hs|41|1|V|haskell
+	-- neuron2 = neuron weights2 bias2
+	-- neuron3 = neuron weights3 bias3
+e9245d4ff9aa2639fed52c731c47f4ea|file:///home/evangelos/workspace/Haskell/NNFromScratch/first_neuron.hs|37|1|V|haskell
+	weights1 = weights !! 1
+74a74b6c42d385477b86d12c510ad4ba|file:///home/evangelos/workspace/Haskell/NNFromScratch/first_neuron.hs|37|1|V|haskell
+	bias1 = biases !! 1
+281290af26beb1f8c3e4a6b533f81788|file:///home/evangelos/workspace/Haskell/NNFromScratch/first_neuron.hs|33|14|V|haskell
+	neurons = [neuron w b inputs | w <- weights,
+61033af9a26f84e32732587120cba3b7|file:///home/evangelos/workspace/Haskell/NNFromScratch/first_neuron.hs|33|14|V|haskell
+	                                  b <- biases
+84db6ce3fa50f69fd1418b02342a49cd|file:///home/evangelos/workspace/Haskell/NNFromScratch/first_neuron.hs|33|11|V|haskell
+	          ]
+3a063541e10c57d88a4b5e02141cda2e|file:///home/evangelos/workspace/Haskell/NNFromScratch/first_neuron.hs|35|29|V|haskell
+	neuron1 = neuron weights1 bias1 inputs
+390a8e7957a3a67ad268884a6cc11d93|file:///home/evangelos/workspace/Haskell/NNFromScratch/first_neuron.hs|35|29|V|haskell
+	neuron2 = neuron weights2 bias2
+bf3741e52e79d6dee0ae567e7efde584|file:///home/evangelos/workspace/Haskell/NNFromScratch/first_neuron.hs|35|29|V|haskell
+	neuron3 = neuron weights3 bias3
+f0e8181a4de635b6cc37e782d52686a2|file:///home/evangelos/workspace/Haskell/NNFromScratch/first_neuron.hs|34|19|v|haskell
+	[ neuron1
+	                 , neuron2
+	                 , neuron3]
+24eed33ee38027d124839f0fcdf6adcb|file:///home/evangelos/workspace/Haskell/NNFromScratch/first_neuron.hs|34|19|v|haskell
+	activation
+ddbe034b3591ad3ce4d97b393b612546|file:///home/evangelos/workspace/Haskell/NNFromScratch/first_neuron.hs|34|19|v|haskell
+	activation 
+accc4a6aef7653498bcf65507244b7f5|file:///home/evangelos/workspace/Haskell/NNFromScratch/first_neuron.hs|35|24|v|haskell
+	sigmoid
+a4e92e287dc5aa51749bbc64bfd66f3e|file:///home/evangelos/workspace/Haskell/NNFromScratch/first_neuron.hs|6|11|v|haskell
+	Float 
+866188ad78ac57bf05a53d9b0d27606d|file:///home/evangelos/workspace/Haskell/NNFromScratch/first_neuron.hs|13|20|v|haskell
+	replicate numOutputs 1
+7c7eea748a02178b49bc19142e43ac93|file:///home/evangelos/workspace/Haskell/NNFromScratch/first_neuron.hs|12|34|v|haskell
+	weights 
+3951ac62fe28c1a84ca104d22fd96ba3|file:///home/evangelos/workspace/Haskell/NNFromScratch/first_neuron.hs|12|30|v|haskell
+	zip 
+7b9d6efab3f64598a3ba1070cd5d0165|file:///home/evangelos/workspace/Haskell/NNFromScratch/first_neuron.hs|12|30|v|haskell
+	biases weights
+a9552101454e54e298060cdcc1a84212|file:///home/evangelos/workspace/Haskell/NNFromScratch/first_neuron.hs|44|23|V|haskell
+	neuron weights bias inputs= (+) bias $ dotProduct inputs weights
+90f207ef8008d98dba5d36c2088ca3ea|file:///home/evangelos/workspace/Haskell/NNFromScratch/first_neuron.hs|37|1|V|haskell
+	dotProduct x y = sum $ zipWith (*) x y
+	neuron weights bias inputs= (+) bias $ dotProduct inputs weights
+5afd9b113cc7bc6797fa9068c8b8b54b|file:///home/evangelos/workspace/Haskell/NNFromScratch/first_neuron.hs|15|44|v|haskell
+	genericReplicate
+7af8a6085893bfe9b7e6aa463ac1a520|file:///home/evangelos/workspace/Haskell/NNFromScratch/first_neuron.hs|15|66|v|haskell
+	normalDistribution 
+160535e694e98a5476154129307d74d9|file:///home/evangelos/bin/dmenu-scrot.sh|29|69|v|sh
+	0077bb
+4d396afcf940bcc3c979ed479954bf58|file:///home/evangelos/.config/nvim/init.vim|255|1|V|vim
+	"TSlime
+b28b957758097fa83b62f79df82c3157|file:///home/evangelos/.config/nvim/init.vim|255|1|V|vim
+	let g:tslime_normal_mapping = '<leader>t'
+d792f9487ffffd76ffbb7a41af69d04c|file:///home/evangelos/.config/nvim/init.vim|255|1|V|vim
+	let g:tslime_visual_mapping = '<leader>t'
+c520b5ff61aca69bdf33f00f04cd8165|file:///home/evangelos/.config/nvim/init.vim|255|1|V|vim
+	let g:tslime_vars_mapping = '<leader>T'
+fe73219e603db1e3bfa5dbea38341e50|file:///home/evangelos/.config/nvim/init.vim|286|1|V|vim
+	" Repls
+2319f54d7e06e53efd27ca7a4602b7ac|file:///home/evangelos/.config/nvim/init.vim|286|1|V|vim
+	nnoremap <leader>cs :TREPLSendLine<cr>
+f63146b3a429f57bda0760060d25d7f1|file:///home/evangelos/.config/nvim/init.vim|286|1|V|vim
+	vnoremap <leader>cs :TREPLSendSelection<cr>
+37c9c0095b6cdcfbd8945aacce5c9b9b|file:///home/evangelos/.config/nvim/init.vim|286|1|V|vim
+	nnoremap <leader>cf :TREPLSendFile<cr>
+6611d234aa0ea231fe747a7b8bbc5ae1|file:///home/evangelos/.config/nvim/init.vim|286|1|V|vim
+	let maplocalleader=','
+4661f337cdd11b8bb4dd77334313df5c|file:///home/evangelos/.config/nvim/init.vim|286|1|V|vim
+	" Iron
+5cd94cb25b28e1de817c83d8c91a2c89|file:///home/evangelos/.config/nvim/init.vim|286|1|V|vim
+	nmap <localleader>t    <Plug>(iron-send-motion)
+5ac913430d9b182992a99203c861acfa|file:///home/evangelos/.config/nvim/init.vim|286|1|V|vim
+	vmap <localleader>v    <Plug>(iron-visual-send)
+6f9f7c436395dea4e0fcda6cb4eeed2f|file:///home/evangelos/.config/nvim/init.vim|287|1|V|vim
+	nmap <localleader>l    <Plug>(iron-send-line)
+	nmap <localleader><CR> <Plug>(iron-cr)
+2d5012abc29cc16ae8d6d7bae778056b|file:///home/evangelos/.config/nvim/init.vim|287|1|V|vim
+	nmap <localleader>i    <plug>(iron-interrupt)
+	nmap <localleader>q    <Plug>(iron-exit)
+34de55ddef000c4bd81ad9850db4314b|file:///home/evangelos/.config/nvim/init.vim|287|1|V|vim
+	nmap <localleader>c    <Plug>(iron-clear)
+7f2582515b9bfc6707bd27772b75d834|file:///home/evangelos/.config/nvim/init.vim|286|1|V|vim
+	nmap <localleader>r    <Plug>(iron-repeat-cmd)
+1ba9c1ade0b2ed1d514333852dbf8c57|file:///home/evangelos/workspace/Haskell/NNFromScratch/first_neuron.hs|4|8|v|haskell
+	Data.Text
+8617a6c09eb76d9882db8ee31a420654|file:///home/evangelos/workspace/Haskell/NNFromScratch/first_neuron.hs|4|7|V|haskell
+	import 
+01e08ecf61db53d47d1d6b4a5f0b6669|file:///home/evangelos/workspace/Haskell/NNFromScratch/first_neuron.hs|4|14|V|haskell
+	import Data.L 
+29017cb9f9f960792e32bedb0774164c|file:///home/evangelos/.config/nvim/index.html|1|8|V|html
+	<DOCt   
+c2467ed3e8d99ec2bc17d7c7e3c224a1|file:///home/evangelos/workspace/DTU/Kubeflow/component_add/comp_add.py|11|5|V|python
+	    # getting authentiaction token
+5c209ebe07c085296e7d3f52fdd4335e|file:///home/evangelos/workspace/DTU/Kubeflow/component_add/comp_add.py|11|5|V|python
+	    context = {"sum": 10}
+36544345bb81928af09f99cacee53bde|file:///home/evangelos/workspace/DTU/Kubeflow/component_add/comp_add.py|14|5|V|python
+	    #downloading the data required
+fd456406745d816a45cae554c788e754|file:///home/evangelos/workspace/DTU/Kubeflow/component_add/comp_add.py|14|11|v|python
+	download
+b6d56fa10b9fe944b2e8a4a10db590de|file:///home/evangelos/workspace/DTU/Kubeflow/component_add/comp_add.py|14|11|v|python
+	context["sum"], auth_token
+952c612271df646f548eee654cd28f6d|file:///home/evangelos/workspace/DTU/Kubeflow/component_add/comp_add.py|15|15|v|python
+	context["numbers"], auth_token
+15e5ae58e2fe2bcf3e979511a4527dea|file:///home/evangelos/workspace/DTU/Kubeflow/component_add/comp_add.py|14|25|v|python
+	, auth_token
+015626262a498158e512ab4d33dae991|file:///home/evangelos/workspace/DTU/Kubeflow/component_add/comp_add.py|14|5|V|python
+	    sum = context["sum"]
+fbb44b4487415b134bce9c790a27fe5e|file:///home/evangelos/workspace/DTU/Kubeflow/component_add/context.json|3|6|v|json
+	total
+5c18ef72771564b7f43c497dc507aeab|file:///home/evangelos/workspace/DTU/Kubeflow/component_add/comp_add.py|10|30|v|python
+	context
+9db072c2e6e4035ac6ac4db7012c6eb7|file:///home/evangelos/workspace/DTU/Kubeflow/component_add/comp_add.py|9|1|V|python
+	    with open(context_path, 'r') as f:
+de7dcc65aa5a2fbe302202210e410850|file:///home/evangelos/workspace/DTU/Kubeflow/component_add/context.json|1|1|V|json
+	{
+	    "numbers": [1, 2, 3 , 4, 5],
+	    "sum": 0,
+	    "token": "aggelos"
+	}
+0cf31b2c283ce3431794586df7b0996d|file:///home/evangelos/workspace/DTU/Kubeflow/component_add/comp_add.py|13|1|V|python
+	    
+b7de43fd6dfaba0ff08dcc5fb33249f4|file:///home/evangelos/workspace/DTU/Kubeflow/component_add/comp_add.py|10|30|v|python
+	"context.json"
+b84cdd85c9e3ee904488c933ee1a3e30|file:///home/evangelos/workspace/DTU/Kubeflow/component_add/comp_add.py|24|9|v|python
+	argv
+382f20e1660475f676bae216bb624bbf|file:///home/evangelos/workspace/DTU/Kubeflow/component_add/comp_add.py|23|1|V|python
+	    print(sys.argv[1])
+c4ab04d128e18be505512eb70da654b6|file:///home/evangelos/workspace/DTU/Kubeflow/component_add/comp_add.py|9|15|v|python
+	context_path
+78e6221f6393d1356681db398f14ce6d|file:///home/evangelos/workspace/DTU/Kubeflow/component_add/comp_add.py|18|16|v|python
+	output
+2ea9510c37f7f89e4941ff75f62f21cb|file:///home/evangelos/workspace/DTU/Kubeflow/component_add/requirements.txt|1|1|V|requirements
+	numpy
+1e94268cbe938569d286b84b6ae0a348|file:///home/evangelos/workspace/DTU/Kubeflow/component_div/comp_div.py|16|1|V|python
+	    context['sum'] = sum(numbers)
+b737d9d3172c69acb010e693a22fb1a3|file:///home/evangelos/workspace/DTU/Kubeflow/component_div/comp_div.py|18|26|v|python
+	sum(numbers)
+9519cb700f55866429408db6d89bac2c|file:///home/evangelos/workspace/Haskell/NNFromScratch/first_neuron.hs|1|1|V|haskell
+	import Control.Monad
+	import Data.Functor
+	import System.Random
+c88b3505a9f79fe7c7244cf032c89c6a|file:///home/evangelos/workspace/Haskell/NNFromScratch/first_neuron.hs|5|1|V|haskell
+	normalDistribution :: Float -> IO Float
+	normalDistribution stdev = do
+	    x1 <- randomIO
+	    x2 <- randomIO
+	    return $ stdev * sqrt (-2 * log x1) * cos (2 * pi * x2)
+c122efc658aad95b0990a94a1cec5312|file:///home/evangelos/workspace/Haskell/NNFromScratch/first_neuron.hs|13|1|V|haskell
+	-- layer :: [Int] -> ([Float], [[Float]])
+	layer numInputs numOutputs = (biases, weights)
+	    where biases = replicate numOutputs 1
+	          weights = replicate numOutputs $ replicate numInputs  0.1
+9a97376877a8db213c1434a6df61a8c3|file:///home/evangelos/workspace/Haskell/NNFromScratch/first_neuron.hs|18|1|V|haskell
+	dotProduct x y = sum $ zipWith (*) x y
+	forward layer input = zipWith (+) biases weightedInputs
+	    where biases = fst layer
+	          weightedInputs = [dotProduct input $ w | w <- weights]
+	            where weights = snd layer
+0c206d9e69a088e903b1430f670b6c27|file:///home/evangelos/workspace/Haskell/NNFromScratch/first_neuron.hs|28|1|V|haskell
+	batch = [[1,2,3, 1], [1 , 93,4,5], [8, 3,4,5]]
+ee5387826bb6f6890eed7710018dcb29|file:///home/evangelos/workspace/Haskell/NNFromScratch/first_neuron.hs|30|1|V|haskell
+	inputs = [1.0,2.0,3.0]
+4297ce0c9f1fbd0e120ed73d182ba745|file:///home/evangelos/workspace/Haskell/NNFromScratch/first_neuron.hs|34|1|V|haskell
+	numNeurons = 5
+	numInputs = 3
+	relu = max 0
+	sigmoid x = 1 / (1 + exp (- x))
+d2e1a527c7118e5676867f220d2e0f0d|file:///home/evangelos/workspace/Haskell/NNFromScratch/first_neuron.hs|39|1|V|haskell
+	activation = map sigmoid
+49d7c113e24f4010fa882787b8ebb4b1|file:///home/evangelos/workspace/Haskell/NNFromScratch/first_neuron.hs|41|1|V|haskell
+	layer1 = layer 3 4 
+	layer2 = layer 4 1
+c144a30d3704428179add45df2186a9c|file:///home/evangelos/workspace/Haskell/NNFromScratch/first_neuron.hs|44|1|V|haskell
+	-- the neural net is just a compositions
+	net = layer1 . layer2 
+da0f9e9ec0c10dbef8ad97989a03948a|file:///home/evangelos/workspace/Haskell/NNFromScratch/first_neuron.hs|45|7|v|haskell
+	activation $ forward layer1 
+388dfc73446d18f44b8c619dde560f9a|file:///home/evangelos/workspace/Haskell/NNFromScratch/first_neuron.hs|45|39|v|haskell
+	activation $ forward layer2 
+58126eec65c7eccf5165c0d2c0f85b6a|file:///home/evangelos/workspace/Haskell/NNFromScratch/first_neuron.hs|44|1|V|haskell
+	-- the neural net is just a compositions
+	net = (activation $ forward layer1) . (activation $ forward layer2) 
+96505cb15ae5e25f63b2ec7427b2527a|file:///home/evangelos/workspace/Haskell/NNFromScratch/first_neuron.hs|44|1|V|haskell
+	-- the neural net is just a compositions
+	net = (activation . (forward layer1)) . (activation . (forward layer2))
+460b34dee1811e1c367448aebd78114c|file:///home/evangelos/workspace/Haskell/NNFromScratch/first_neuron.hs|44|1|V|haskell
+	-- the neural net is just a compositions
+	net = (activation . (forward layer2)) . (activation . (forward layer1))
+f401d05fe3d0cea6152ea5709df3a1a2|file:///home/evangelos/workspace/Haskell/NNFromScratch/first_neuron.hs|45|21|v|haskell
+	forward layer2
+46cd3020256b79893b14c5fa32059345|file:///home/evangelos/workspace/Haskell/NNFromScratch/first_neuron.hs|45|53|v|haskell
+	forward layer1
+59e8dd1cf5eb4e6de073bbcf228a53d4|file:///home/evangelos/workspace/Haskell/NNFromScratch/first_neuron.hs|44|1|V|haskell
+	-- the neural net is just a compositions
+	net = (activation . forward layer2) . (activation . forward layer1)
+966438eb7266f839ddc92365d3c967bc|file:///home/evangelos/workspace/Haskell/NNFromScratch/first_neuron.hs|13|1|V|haskell
+	layer :: [Int] -> ([Float], [[Float]])
+	layer numInputs numOutputs = (biases, weights)
+	    where biases = replicate numOutputs 1
+	          weights = replicate numOutputs $ replicate numInputs  0.1
+87049114ee3f56e76447d29138249f61|file:///home/evangelos/workspace/Haskell/NNFromScratch/first_neuron.hs|13|1|V|haskell
+	layer :: Int -> ([Float], [[Float]])
+	layer numInputs numOutputs = (biases, weights)
+	    where biases = replicate numOutputs 1
+	          weights = replicate numOutputs $ replicate numInputs  0.1
+5add57ca5b309840b89b6fabe7a79c44|file:///home/evangelos/workspace/Haskell/NNFromScratch/first_neuron.hs|13|1|V|haskell
+	layer :: Int -> Int -> ([Float], [[Float]])
+	layer numInputs numOutputs = (biases, weights)
+	    where biases = replicate numOutputs 1
+	          weights = replicate numOutputs $ replicate numInputs  0.1
+ab0cb7999038f2329695215e1f539b49|file:///home/evangelos/workspace/Haskell/NNFromScratch/first_neuron.hs|18|1|V|haskell
+	dotProduct :: Num -> Num -> Num
+	dotProduct x y = sum $ zipWith (*) x y
+777b98dc2838ea457eeaaeb4e433cef8|file:///home/evangelos/workspace/Haskell/NNFromScratch/first_neuron.hs|18|1|V|haskell
+	dotProduct :: Int -> Int -> Int
+	dotProduct x y = sum $ zipWith (*) x y
+5850c248a2adbc05a9c3b42f0d536d25|file:///home/evangelos/workspace/Haskell/NNFromScratch/first_neuron.hs|18|15|v|haskell
+	Int 
+fd9514595616276f7af1ab4d834bdfb9|file:///home/evangelos/workspace/Haskell/NNFromScratch/first_neuron.hs|18|1|V|haskell
+	dotProduct :: [Int] -> [Int] -> Int
+	dotProduct x y = sum $ zipWith (*) x y
+b5f1c1f6ef7ec62b9513a3eb6eb01f8f|file:///home/evangelos/workspace/Haskell/NNFromScratch/first_neuron.hs|21|1|V|haskell
+	forward :: ([Float], [[Float]]) -> [Int] -> [Int] 
+	forward layer input = zipWith (+) biases weightedInputs
+	    where biases = fst layer
+	          weightedInputs = [dotProduct input $ w | w <- weights]
+	            where weights = snd layer
+149cf56d76e50ae83d9f00de324ddb29|file:///home/evangelos/workspace/Haskell/NNFromScratch/first_neuron.hs|21|1|V|haskell
+	forward :: ([Int], [[Int]]) -> [Int] -> [Int] 
+	forward layer input = zipWith (+) biases weightedInputs
+	    where biases = fst layer
+	          weightedInputs = [dotProduct input $ w | w <- weights]
+	            where weights = snd layer
+8664dc686d951a1797974e10d13d1620|file:///home/evangelos/workspace/Haskell/NNFromScratch/first_neuron.hs|13|1|V|haskell
+	layer :: Int -> Int -> ([Int], [[Int]])
+	layer numInputs numOutputs = (biases, weights)
+	    where biases = replicate numOutputs 1
+	          weights = replicate numOutputs $ replicate numInputs  0.1
+3911d404991a99f9fb270f7c58a5d7e4|file:///home/evangelos/workspace/Haskell/NNFromScratch/first_neuron.hs|13|1|V|haskell
+	layer :: Int -> Int -> ([Int], [[Int]])
+	layer numInputs numOutputs = (biases, weights)
+	    where biases = replicate numOutputs 1.0
+	          weights = replicate numOutputs $ replicate numInputs  0.1
+795c42191e5a8a839d287eecab032a67|file:///home/evangelos/workspace/Haskell/NNFromScratch/first_neuron.hs|13|1|V|haskell
+	layer :: Int -> Int -> ([Int], [[Int]])
+	layer numInputs numOutputs = (biases, weights)
+	    where biases = replicate numOutputs 0.1
+	          weights = replicate numOutputs $ replicate numInputs  0.1
+0b6454ef9f435c6cc792ca27dff9d728|file:///home/evangelos/workspace/Haskell/NNFromScratch/first_neuron.hs|11|1|V|haskell
+	network :: [Int] -> [([Float], [[Float]])]
+4c000b41428fd983477321f4926f5381|file:///home/evangelos/workspace/Haskell/NNFromScratch/first_neuron.hs|20|1|V|haskell
+	forward :: ([Int], [[Int]]) -> [Int] -> [Int] 
+	forward layer input = zipWith (+) biases weightedInputs
+	    where biases = fst layer
+	          weightedInputs = [dotProduct input  w | w <- weights]
+	            where weights = snd layer
+b1b43481103c305f08a639fb7ffe0fec|file:///home/evangelos/workspace/Haskell/NNFromScratch/first_neuron.hs|34|1|V|haskell
+	numNeurons = 5
+26806144a5956d0e89df23f965ba0263|file:///home/evangelos/workspace/Haskell/NNFromScratch/first_neuron.hs|34|1|V|haskell
+	numInputs = 3
+f1ae2757d2b46721347282c916e5752f|file:///home/evangelos/workspace/Haskell/NNFromScratch/first_neuron.hs|34|1|V|haskell
+	relu = max 0
+	sigmoid x = 1 / (1 + exp (- x))
+	activation = map sigmoid
+a746493555e38400741c773e0a0ef66f|file:///home/evangelos/workspace/Haskell/NNFromScratch/first_neuron.hs|12|1|V|haskell
+	layer :: Float -> Float -> ([Float], [[Float]])
+	layer numInputs numOutputs = (biases, weights)
+	    where biases = replicate numOutputs 1
+	          weights = replicate numOutputs $ replicate numInputs  0.1
+e8170a1a3967bbe4e72758bd6681c9a4|file:///home/evangelos/workspace/Haskell/NNFromScratch/first_neuron.hs|34|1|V|haskell
+	layer1 = layer 3.0 4.0
+	layer2 = layer 4 1
+c675f24ad9b1178a3a8974e510edba60|file:///home/evangelos/workspace/Haskell/NNFromScratch/first_neuron.hs|20|1|V|haskell
+	forward :: ([Float], [[Float]]) -> [Int] -> [Int] 
+	forward layer input = zipWith (+) biases weightedInputs
+	    where biases = fst layer
+	          weightedInputs = [dotProduct input  w | w <- weights]
+	            where weights = snd layer
+0f0ff6c6185c74ee0c78476e77b46183|file:///home/evangelos/workspace/Haskell/NNFromScratch/first_neuron.hs|17|16|v|haskell
+	Flaot
+562358ffbefaf5772a2e9eec6b8f2465|file:///home/evangelos/workspace/Haskell/NNFromScratch/first_neuron.hs|17|1|V|haskell
+	dotProduct :: [Float] -> [Float] -> Int
+	dotProduct x y = sum $ zipWith (*) x y
+2c1d34d9c8e9958254264b393ec0ff7d|file:///home/evangelos/workspace/Haskell/NNFromScratch/first_neuron.hs|20|1|V|haskell
+	forward :: ([Int], [[Float]]) -> [Int] -> [Int] 
+	forward layer input = zipWith (+) biases weightedInputs
+	    where biases = fst layer
+	          weightedInputs = [dotProduct input  w | w <- weights]
+	            where weights = snd layer
+22bc1041b132ba0333b58068844c5ce0|file:///home/evangelos/workspace/Haskell/NNFromScratch/first_neuron.hs|17|27|v|haskell
+	Flloa
+eb073e1b0fa13be6d843f167fbb91b9d|file:///home/evangelos/workspace/Haskell/NNFromScratch/first_neuron.hs|17|1|V|haskell
+	dotProduct :: [Float] -> [Float] -> Float
+	dotProduct x y = sum $ zipWith (*) x y
+d8855aa8438151b479727bfbd0cb3e73|file:///home/evangelos/workspace/Haskell/NNFromScratch/first_neuron.hs|20|1|V|haskell
+	forward :: ([Float], [[Float]]) -> [Float] -> [Float] 
+	forward layer input = zipWith (+) biases weightedInputs
+	    where biases = fst layer
+	          weightedInputs = [dotProduct input  w | w <- weights]
+	            where weights = snd layer
+c2942bde16824947a3508704adfaa419|file:///home/evangelos/workspace/Haskell/NNFromScratch/first_neuron.hs|40|1|V|haskell
+	-- we can just
+	batchOuts = map net batch
+648f7d42bcff9f5b30614fdea21331a9|file:///home/evangelos/workspace/Haskell/NNFromScratch/first_neuron.hs|26|1|V|haskell
+	relu = max 0
+	sigmoid x = 1 / (1 + exp (- x))
+	activation = map relu
+fdf947f16114caa877022433cf01f641|file:///home/evangelos/workspace/Haskell/NNFromScratch/first_neuron.hs|5|1|v|haskell
+	rormalDistribution
+3e6713dc638fc234fc817833d5a53ef5|file:///home/evangelos/workspace/Haskell/NNFromScratch/first_neuron.hs|6|1|v|haskell
+	normalDistribution
+1791b20ce75b0d9eee22c97964cee2d7|file:///home/evangelos/workspace/Haskell/NNFromScratch/first_neuron.hs|5|1|V|haskell
+	gauss :: Float -> IO Float
+	gauss stdev = do
+	    x1 <- randomIO
+	    x2 <- randomIO
+	    return $ stdev * sqrt (-2 * log x1) * cos (2 * pi * x2)
+33e2f881b578378638175fa8721b93f2|file:///home/evangelos/workspace/Haskell/NNFromScratch/first_neuron.hs|12|1|V|haskell
+	layer :: Int -> Int -> ([Float], [[Float]])
+	layer numInputs numOutputs = (biases, weights)
+	    where biases = replicate numOutputs 1
+	          weights = replicate numOutputs $ replicate numInputs $ gauss 0.01 
+fa840961fed626a297b6b777027ae59a|file:///home/evangelos/workspace/Haskell/NNFromScratch/first_neuron.hs|12|1|V|haskell
+	layer :: Int -> Int -> ([Float], [[Float]])
+	layer numInputs numOutputs = (biases, weights)
+	    where biases = replicate numOutputs 1
+	          weights = replicate numOutputs $ replicateM numInputs $ gauss 0.01 
+766b70a8d2d2a3212bb71df13143185a|file:///home/evangelos/workspace/Haskell/NNFromScratch/first_neuron.hs|12|1|V|haskell
+	layer :: Int -> Int -> ([Float], [[Float]])
+	layer numInputs numOutputs = (biases, weights)
+	    where biases = replicate numOutputs 1
+	          weights = replicateM numOutputs $ replicateM numInputs $ gauss 0.01 
+9a4ade548cd25a819b72691a759ee7ba|file:///home/evangelos/workspace/Haskell/NNFromScratch/first_neuron.hs|15|66|v|haskell
+	gauss 
+c7377c034a809091fba9023a271ea50b|file:///home/evangelos/workspace/Haskell/NNFromScratch/first_neuron.hs|12|1|V|haskell
+	layer :: Int -> Int -> ([Float], [[Float]])
+	layer numInputs numOutputs = (biases, weights)
+	    where biases = replicate numOutputs 1
+	          weights = replicateM numOutputs $ replicateM numInputs 0.01 
+dd103811e4fff20e8e01f9f4c527ca58|file:///home/evangelos/workspace/Haskell/NNFromScratch/first_neuron.hs|12|1|V|haskell
+	layer :: Int -> Int -> ([Float], [[Float]])
+	layer numInputs numOutputs = (biases, weights)
+	    where biases = replicate numOutputs 1
+	          weights = replicate numOutputs $ replicate numInputs 0.01 
+55c55b4e1733b5a96f162f2d7661a016|file:///home/evangelos/workspace/Haskell/NNFromScratch/first_neuron.hs|46|4|V|haskell
+	    :: a
+e24ed0872f23a18354579baeef3d2b0f|file:///home/evangelos/workspace/Haskell/NNFromScratch/first_neuron.hs|46|1|V|haskell
+	    = undefined
+ee5d02201166658ad2e58bc9e64afe39|file:///home/evangelos/workspace/Haskell/NNFromScratch/first_neuron.hs|43|1|V|haskell
+	-- Gradient descent
+	-- Relu gradients
+	relu' | x < 0 = 0
+	      | otherwise = 1
+9e3c5bf850a0351528036fc604f42b59|file:///home/evangelos/workspace/Haskell/NNFromScratch/first_neuron.hs|43|1|V|haskell
+	-- Gradient descent
+	-- Relu gradients
+	relu' x | x < 0 = 0
+	      | otherwise = 1
+5519c38f79d0c6cf40e5cadfe47723e8|file:///home/evangelos/workspace/Haskell/NNFromScratch/first_neuron.hs|43|1|V|haskell
+	-- Gradient descent
+	-- Relu gradients
+	relu' x | x < 0 = 0
+	        | otherwise = 1
+efcf3e09eddc8914dfa0ca4fd708ecae|file:///home/evangelos/workspace/Haskell/NNFromScratch/first_neuron.hs|48|1|V|haskell
+	dCost a y | y == 1 && a >= y = 0 
+	          | otherwise        = a - y
+c93595d7b6367482009e0db1188b505a|file:///home/evangelos/.config/herbstluftwm/sxhkd/sxhkdrc|39|1|V|sxhkdrc
+	# Bluetooth devices -- Colors are set up in /usr/bin
+	control + p ; b
+		btmenu 
+c78d4c95d542336c9bcf52032ed23e0d|file:///home/evangelos/.config/herbstluftwm/sxhkd/sxhkdrc|40|1|V|sxhkdrc
+	control + p ; b
+		btmenu 
+88d729b0db93f38cf5d389879b3d9fa8|file:///home/evangelos/.config/herbstluftwm/sxhkd/sxhkdrc|45|2|v|sxhkdrc
+	btmenu
+b2c1a8a03f09ca18c78e68d9d38529bb|file:///home/evangelos/workspace/Haskell/NNFromScratch/first_neuron.hs|44|1|v|haskell
+	meanSquaredError
+2657305717ffa853fb1b166ec830c4f5|file:///home/evangelos/workspace/Haskell/NNFromScratch/first_neuron.hs|44|40|v|haskell
+	yHta
+65ff85dcc5388925240bf02d9a2e442d|file:///home/evangelos/workspace/Haskell/NNFromScratch/first_neuron.hs|1|1|V|haskell
+	import Control.Monad
+	import Data.Functor
+	import System.Random
+	
+	gauss :: Float -> IO Float
+	gauss stdev = do
+	    x1 <- randomIO
+	    x2 <- randomIO
+	    return $ stdev * sqrt (-2 * log x1) * cos (2 * pi * x2)
+	
+	
+	layer :: Int -> Int -> ([Float], [[Float]])
+	layer numInputs numOutputs = (biases, weights)
+	    where biases = replicate numOutputs 1
+	          weights = replicate numOutputs $ replicate numInputs  0.1
+	
+	dotProduct :: [Float] -> [Float] -> Float
+	dotProduct x y = sum $ zipWith (*) x y
+	
+	forward :: ([Float], [[Float]]) -> [Float] -> [Float] 
+	forward layer input = zipWith (+) biases weightedInputs
+	    where biases = fst layer
+	          weightedInputs = [dotProduct input  w | w <- weights]
+	            where weights = snd layer
+	
+	relu = max 0
+	sigmoid x = 1 / (1 + exp (- x))
+	activation = map relu
+	
+	batch = [[1,2,3, 1], [1 , 93,4,5], [8, 3,4,5]]
+	
+	inputs = [1.0,2.0,3.0]
+	
+	layer1 = layer 3 4 
+	layer2 = layer 4 1
+	
+	-- the neural net is just a compositions
+	net = (activation . forward layer2) . (activation . forward layer1)
+	
+	-- we can just
+	batchOuts = map net batch
+	
+	
+	BCE y yHat = - (sum zipWith (*) y (log yHat)) 
+6b3a2d99ddced050dd3b2ecea5ddd190|file:///home/evangelos/workspace/Haskell/NNFromScratch/first_neuron.hs|1|1|v|haskell
+	import Control.Monad
+	import Data.Functor
+	import System.Random
+	
+	gauss :: Float -> IO Float
+	gauss stdev = do
+	    x1 <- randomIO
+	    x2 <- randomIO
+	    return $ stdev * sqrt (-2 * log x1) * cos (2 * pi * x2)
+	
+	
+	layer :: Int -> Int -> ([Float], [[Float]])
+	layer numInputs numOutputs = (biases, weights)
+	    where biases = replicate numOutputs 1
+	          weights = replicate numOutputs $ replicate numInputs  0.1
+	
+	dotProduct :: [Float] -> [Float] -> Float
+	dotProduct x y = sum $ zipWith (*) x y
+	
+	forward :: ([Float], [[Float]]) -> [Float] -> [Float] 
+	forward layer input = zipWith (+) biases weightedInputs
+	    where biases = fst layer
+	          weightedInputs = [dotProduct input  w | w <- weights]
+	            where weights = snd layer
+	
+	relu = max 0
+	sigmoid x = 1 / (1 + exp (- x))
+	activation = map relu
+	
+	batch = [[1,2,3, 1], [1 , 93,4,5], [8, 3,4,5]]
+	
+	inputs = [1.0,2.0,3.0]
+	
+	layer1 = layer 3 4 
+	layer2 = layer 4 1
+	
+	-- the neural net is just a compositions
+	net = (activation . forward layer2) . (activation . forward layer1)
+	
+	-- we can just
+	batchOuts = map net batch
+	
+	
+	B
+f2918ca2b8cdab76b3e846c8485aa862|file:///home/evangelos/workspace/Haskell/NNFromScratch/first_neuron.hs|44|1|V|haskell
+	BCE y yHat = - (sum zipWith (*) y (log yHat)) 
+5da18f8379408969f361a46276b0f55f|file:///home/evangelos/workspace/Haskell/NNFromScratch/first_neuron.hs|44|1|V|haskell
+	binaryCrossEntropy y yHat = - (sum zipWith (*) y (log yHat)) 
+d0234a6344caf4a8760037973ad350d0|file:///home/evangelos/workspace/Haskell/NNFromScratch/first_neuron.hs|44|1|V|haskell
+	binaryCrossEntropy y yHat = - (sum zipWith (*) y (map log yHat)) 
+476f7d1ff3019ba71393d52cb23896f1|file:///home/evangelos/sicp/Makefile|90|1|V|make
+		@inkscape -b "#fbfbfb" -C -o $(THUMB) -f $(DIR)fig/coverpage.std.svg > /dev/null
+2ac43aa43bf473f9a9c09b4b608619d3|file:///home/evangelos/.config/nvim/init.vim|24|16|v|vim
+	light
+3fcdb73d36d54f2cc22d0f68e6b6e182|file:///home/evangelos/workspace/Python/FastApiVideoStreaming/fast-api-tutorial/main.py|6|1|v|python
+	form
+989d5eabe5177af87a88824207a4a37b|file:///home/evangelos/workspace/Python/FastApiVideoStreaming/fast-api-tutorial/main.py|21|1|V|python
+	@app.get("/items/{item_id}")
+	def read_item(item_id: int, q: Optional[str] = None):
+	    return {"item_id": item_id, "q": q}
+ebb061953c0454b2c8ee7b0ac615ebcd|file:///home/evangelos/workspace/Python/FastApiVideoStreaming/fast-api-tutorial/main.py|27|35|v|python
+	Optional
+6adf97f83acf6453d4a6a4b1070f3754|file:///home/evangelos/workspace/Python/FastApiVideoStreaming/fast-api-tutorial/main.py|27|39|v|python
+	None
+ecae13117d6f0584c25a9da6c8f8415e|file:///home/evangelos/workspace/Python/FastApiVideoStreaming/fast-api-tutorial/main.py|27|5|v|python
+	read
+82bfda7962fd12f51163ae45886c4c62|file:///home/evangelos/workspace/Python/FastApiVideoStreaming/fast-api-tutorial/main.py|28|14|v|python
+	item_id
+37302ccecb8ae11c64170bc6bfa44eaa|file:///home/evangelos/workspace/Python/FastApiVideoStreaming/fast-api-tutorial/main.py|28|26|v|python
+	iter
+247179669d32f4eed3bda97def5b32cf|file:///home/evangelos/workspace/Python/FastApiVideoStreaming/stream-webcam-fast-api/main.py|10|14|v|python
+	VideoCapture
+e70c4df10ef0983b9c8c31bd06b2a2c3|file:///home/evangelos/workspace/Python/FastApiVideoStreaming/stream-webcam-fast-api/main.py|14|9|v|python
+	return
+4bca2da5b91c578b63247422ac59e627|file:///home/evangelos/workspace/Python/FastApiVideoStreaming/stream-webcam-fast-api/main.py|34|1|v|python
+	@app.get("/")
+	def read_root():
+	    return {"Hello": "World!"}
+	
+	
+74471ec662522d83efcc0269087dd1f3|file:///home/evangelos/workspace/Python/FastApiVideoStreaming/stream-webcam-fast-api/main.py|39|5|v|python
+	read_root
+9fc0fe38fd3c84452df2b7091ffbe8fc|file:///home/evangelos/workspace/Python/FastApiVideoStreaming/stream-webcam-fast-api/main.py|40|12|V|python
+	    return {"Hello": "World!"}
+4ffe19d9e2d77688d38ae2f69c7c08cd|file:///home/evangelos/workspace/Python/FastApiVideoStreaming/stream-webcam-fast-api/main.py|40|12|v|python
+	{"Hello": "World!"}
+ac4ee2b42f5e93f30881382aef141c98|file:///home/evangelos/workspace/Python/FastApiVideoStreaming/stream-webcam-fast-api/main.py|13|1|v|python
+	camera = cv2.VideoCapture(0)
+	
+	async def gen_frames():
+	    while True:
+	        succes, frame =  camera.read()
+	        if not succes:
+	            break
+	        else:
+	            _, buffer = cv2.imencode('.jpg', frame)
+	
+f726a97ae33cf5f934589c48302813db|file:///home/evangelos/workspace/Python/FastApiVideoStreaming/stream-webcam-fast-api/main.py|11|1|v|python
+	import cv2
+	
+	camera = cv2.VideoCapture(0)
+	
+	async def gen_frames():
+	    while True:
+	        succes, frame =  camera.read()
+	        if not succes:
+	            break
+	        else:
+	            _, buffer = cv2.imencode('.jpg', frame)
+	            frame = buffer.tobytes()
+	            yield(b'--frame\r\n'
+	                  b'Content type: image/jpeg\r\n\r\n' + frame + b'\r\n')
+	
+	
+a1ac983aa3e275625e47c19ef48d2cb9|file:///home/evangelos/workspace/Python/FastApiVideoStreaming/stream-webcam-fast-api/cv2_example.py|6|1|v|python
+	async 
+de55be1d4fca5fc361d800b56c66c57b|file:///home/evangelos/workspace/Python/FastApiVideoStreaming/stream-webcam-fast-api/main.py|32|1|V|python
+	async def slow_numbers(minimum, maximum):
+	    yield ("<html><body><ul>")
+	    for number in range(minimum, maximum + 1):
+	        yield "<li>%d</li>" % number
+	        await asyncio.sleep(0.5)
+	    yield ("</ul></body></html>")
+2ff809bdc127fda9fcb150b170911030|file:///home/evangelos/workspace/Python/FastApiVideoStreaming/stream-webcam-fast-api/main.py|22|1|V|python
+	def gen_frames():
+	    while True:
+b1a1965174f8df92194a9b1174e8f818|file:///home/evangelos/workspace/Python/FastApiVideoStreaming/stream-webcam-fast-api/main.py|22|1|V|python
+	        succes, frame = camera.read()
+1cf7e43cdfd55109b12b69880d46d8a9|file:///home/evangelos/workspace/Python/FastApiVideoStreaming/stream-webcam-fast-api/main.py|22|1|V|python
+	        if not succes:
+edaea21223ba673bbcc9f7b3e4bc4ec9|file:///home/evangelos/workspace/Python/FastApiVideoStreaming/stream-webcam-fast-api/main.py|22|1|V|python
+	            break
+d011c4968567dede52955bfd0cd3e240|file:///home/evangelos/workspace/Python/FastApiVideoStreaming/stream-webcam-fast-api/main.py|22|1|V|python
+	        _, buffer = cv2.imencode(".jpg", frame)
+df3442dc6de08e370eee2be705583387|file:///home/evangelos/workspace/Python/FastApiVideoStreaming/stream-webcam-fast-api/main.py|22|1|V|python
+	        frame = buffer.tobytes()
+3646c2e4c451d1960130364cd6dd6e61|file:///home/evangelos/workspace/Python/FastApiVideoStreaming/stream-webcam-fast-api/main.py|22|1|V|python
+	        yield frame
+26d09908a23b1cb67e3d80b68f1ea220|file:///home/evangelos/workspace/Python/FastApiVideoStreaming/stream-webcam-fast-api/app.py|9|1|v|python
+	def gen_frames():  
+	    while True:
+	        success, frame = camera.read()  # read the camera frame
+	        if not success:
+	            break
+	        else:
+	            _, buffer = cv2.imencode('.jpg', frame)
+	            frame = buffer.tobytes()
+	            yield (b'--frame\r\n'
+	                   b'Content-Type: image/jpeg\r\n\r\n' + frame + b'\r\n')  # concat frame one by one and show result
+	
+	
+b87273469e237d74642f938dc6411124|file:///home/evangelos/workspace/Python/FastApiVideoStreaming/stream-webcam-fast-api/main.py|39|5|v|python
+	return templates.TemplateResponse("index.html", {"request": request})
+a366e92bb4cd64755273395aac597b74|file:///home/evangelos/workspace/Python/FastApiVideoStreaming/stream-webcam-fast-api/main.py|39|5|V|python
+	    return templates.TemplateResponse("index.html", {"request": request})
+78e731027d8fd50ed642340b7c9a63b3|file:///home/evangelos/workspace/Python/FastApiVideoStreaming/stream-webcam-fast-api/main.py|39|71|v|python
+	message
+51686549c7fea03999e8913a5d3496c5|file:///home/evangelos/workspace/Python/FastApiVideoStreaming/stream-webcam-fast-api/main.py|39|71|v|python
+	Contact 
+cb411db540359b67346757fc46819c45|file:///home/evangelos/workspace/Python/FastApiVideoStreaming/stream-webcam-fast-api/main.py|12|8|V|python
+	import asyncio
+9838b5093eeac6d51f46d29d7459c615|file:///home/evangelos/workspace/Python/FastApiVideoStreaming/stream-webcam-fast-api/templates/index.html|2|1|V|html
+	<html class="no-js" lang="">
+30e634c3d8684ed89c55fc1981a01300|file:///home/evangelos/workspace/Python/FastApiVideoStreaming/stream-webcam-fast-api/templates/index.html|2|1|V|html
+	    <head>
+	        <meta charset="utf-8">
+	        <meta http-equiv="x-ua-compatible" content="ie=edge">
+	        <title>Untitled</title>
+	        <meta name="description" content="">
+	        <meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	        <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+	        <!-- Place favicon.ico in the root directory -->
+	
+	    </head>
+	    <body>
+8cecff6ae25d98dd46d9345ca80518ea|file:///home/evangelos/workspace/Python/FastApiVideoStreaming/stream-webcam-fast-api/templates/index.html|1|1|V|html
+	<!doctype html>
+	<div class="container">
+	    <div class="row">
+	        <div class="col-lg-8  offset-lg-2">
+	            <h3 class="mt-5">Live Streaming</h3>
+	            <img src="{{ url_for('video_feed') }}" width="100%">
+	        </div>
+	    </div>
+	</div>
+	        
+	    </body>
+	</html>
+a958c4c45d836bff3d09456cd362959c|file:///home/evangelos/workspace/Python/FastApiVideoStreaming/stream-webcam-fast-api/main.py|25|13|V|python
+	        else:
+7232432d98f50a78bdd9e4fdddbb1d65|file:///home/evangelos/workspace/Python/FastApiVideoStreaming/stream-webcam-fast-api/app.py|35|1|V|python
+	    app.run(debug=True)
+4b4edc2630fe75800ddc29a7b4070add|file:///home/evangelos/workspace/Python/FastApiVideoStreaming/stream-webcam-fast-api/app.py|34|34|v|python
+	2204
+80a701d4b70ebbe74c0af8763367fd76|file:///home/evangelos/workspace/Python/FastApiVideoStreaming/stream-webcam-fast-api/main.py|42|42|v|python
+	media_type
+78805a221a988e79ef3f42d7c5bfd418|file:///home/evangelos/workspace/Python/FastApiVideoStreaming/stream-webcam-fast-api/main.py|42|42|v|python
+	image
+ab4f3ccba74857c5f2ba0d5b7dbf65e1|file:///home/evangelos/workspace/Python/FastApiVideoStreaming/stream-webcam-fast-api/main.py|42|42|v|python
+	jpeg
+6cea2c3fd7bb19900e248ac0cb440662|file:///home/evangelos/workspace/Python/FastApiVideoStreaming/stream-webcam-fast-api/main.py|41|34|V|python
+	    assert scope["type"] == "http"
+31a1fd140be4bef2d11e121ec9a18a58|file:///home/evangelos/workspace/Python/FastApiVideoStreaming/stream-webcam-fast-api/main.py|40|11|v|python
+	scope
+c5f69b2272097d8a0f850e03e438081a|file:///home/evangelos/workspace/Python/FastApiVideoStreaming/stream-webcam-fast-api/main.py|35|13|v|python
+	response_class
+141f0da433f79ddbdec8b51a6ff892ed|file:///home/evangelos/workspace/Python/FastApiVideoStreaming/stream-webcam-fast-api/main.py|35|13|v|python
+	HTMLResponse
+f2c00175afef4a96d6029e469f2c0490|file:///home/evangelos/workspace/Python/FastApiVideoStreaming/stream-webcam-fast-api/templates/index.html|1|1|V|html
+	<body>
+	<div class="container">
+	    <div class="row">
+	        <div class="col-lg-8  offset-lg-2">
+	            <h3 class="mt-5">Live Streaming</h3>
+	            <img src="{{ url_for('video_feed') }}" width="100%">
+	        </div>
+	    </div>
+	</div>
+	</body>
+d943ab57232bdd692c1e56e162c4ec9b|file:///home/evangelos/workspace/Python/FastApiVideoStreaming/stream-webcam-fast-api/templates/index.html|1|19|V|html
+	def gen_frames():  
+875885dd5056057247091ea365e152d9|file:///home/evangelos/workspace/Python/FastApiVideoStreaming/stream-webcam-fast-api/templates/index.html|1|1|V|html
+	    while True:
+	            success, frame = camera.read()  # read the camera frame
+	                    if not success:
+	                                break
+	                                        else:
+	                                                    _, buffer = cv2.imencode('.jpg', frame)
+	                                                                frame = buffer.tobytes()
+	                                                                            yield (b'--frame\r\n'
+	                                                                                               b'Content-Type: image/jpeg\r\n\r\n' + frame + b'\r\n')  # concat frame one by one and show result
+0caf8682ecf6dd04a01f9cdda83b60f9|file:///home/evangelos/workspace/Python/FastApiVideoStreaming/stream-webcam-fast-api/main.py|27|15|v|python
+	(b'--frame\r\n'
+	               b'Content-Type: image/jpeg\r\n\r\n' + frame + b'\r\n')  # concat frame one by one and show result
+	
+	
+baa4e18316234a76a31fe51b7867ea0a|file:///home/evangelos/workspace/Python/FastApiVideoStreaming/stream-webcam-fast-api/main.py|36|20|v|python
+	include_in_schema
+f8320b26d30ab433c5a54546d21f414c|file:///home/evangelos/workspace/Python/FastApiVideoStreaming/stream-webcam-fast-api/main.py|36|20|v|python
+	False
+9c46408a3bc655c68505c57a11d6c4ee|file:///home/evangelos/workspace/Python/FastApiVideoStreaming/stream-webcam-fast-api/main.py|36|6|v|python
+	route
+2db68c297176f6c4951f46258551b712|file:///home/evangelos/workspace/Python/FastApiVideoStreaming/stream-webcam-fast-api/main.py|18|1|V|python
+	templates = Jinja2Templates(directory="templates")
+21b34a627d7a0b7301625a8d8aacfcdb|file:///home/evangelos/workspace/Python/FastApiVideoStreaming/stream-webcam-fast-api/main.py|32|1|V|python
+	async def read_root(request: Request):
+e2074cd0d236bae4f4794ed1c46e1dcd|file:///home/evangelos/workspace/Python/FastApiVideoStreaming/stream-webcam-fast-api/main.py|32|1|V|python
+	   return templates.TemplateResponse("index.html", {"request": request,  "message": "Contact Us"})
+c05819b27dd08b99792045680b5fa5ca|file:///home/evangelos/workspace/Python/FastApiVideoStreaming/stream-webcam-fast-api/main.py|31|1|V|python
+	@app.get("/")
+	
+dcf3e36ee8115282aad46485cab6a4be|file:///home/evangelos/workspace/Python/FastApiVideoStreaming/stream-webcam-fast-api/main.py|26|14|v|python
+	frame
+270d69160e4c57a10f8f0c5caee0ed68|file:///home/evangelos/workspace/Python/FastApiVideoStreaming/stream-webcam-fast-api/main.py|31|12|v|python
+	dideo
+7f2db423a49b305459147332fb01cf87|file:///home/evangelos/workspace/Python/FastApiVideoStreaming/stream-webcam-fast-api/main.py|28|15|v|python
+	buffer
+0161659c96ad243f3257fb0ca975dbfd|file:///home/evangelos/workspace/Python/FastApiVideoStreaming/stream-webcam-fast-api/app.py|44|60|v|python
+	, debug=True
+6687b675599c12ebc5e9c70932d42809|file:///home/evangelos/workspace/Python/FastApiVideoStreaming/stream-webcam-fast-api/app.py|33|23|v|python
+	hello dash
+9b4275764526cfe06887921ceb31bfe1|file:///home/evangelos/workspace/Python/FastApiVideoStreaming/stream-webcam-fast-api/app.py|36|14|v|python
+	Webcam Test
+84f1d4f33ee897ec4ca3fc4b23f19d4c|file:///home/evangelos/workspace/Python/FastApiVideoStreaming/stream-webcam-fast-api/app.py|35|5|v|python
+	html.Div([
+	    html.H2("Cartridge Counting"),
+	    html.Img(src="/video_feed")
+	])
+	
+4ea4172cc93276995881b8a39ee9bf51|file:///home/evangelos/workspace/Python/FastApiVideoStreaming/stream-webcam-fast-api/app.py|40|14|v|python
+	Cartridge Counting
+6f0a6b343f93c4c38ca9e296db855b15|file:///home/evangelos/workspace/Python/FastApiVideoStreaming/stream-webcam-fast-api/app.py|35|31|V|python
+	        'color': colors['text']
+64104bb1511d6c6e93742a5bac664075|file:///home/evangelos/workspace/Python/FastApiVideoStreaming/stream-webcam-fast-api/app.py|33|31|v|python
+	style={
+	        'textAlign': 'center',
+	    }
+35b75febbff713391dfb6bf4e6accd5f|file:///home/evangelos/workspace/Python/FastApiVideoStreaming/stream-webcam-fast-api/app.py|49|21|V|python
+	                    className="one-half column",
+dd5c8bf51558ffcbe5007071908e9524|file:///home/evangelos/workspace/Python/FastApiVideoStreaming/stream-webcam-fast-api/app.py|42|20|v|python
+	third
+b579d638099be3c3ab8d4e3080f1ebf6|file:///home/evangelos/workspace/Python/FastApiVideoStreaming/stream-webcam-fast-api/app.py|53|25|v|python
+	one-half column
+74e22a0a2228b69895d0f4170731f670|file:///home/evangelos/workspace/Python/FastApiVideoStreaming/stream-webcam-fast-api/app.py|48|5|v|python
+	html.H2("Cartridge Counting", style={
+	        'textAlign': 'center',
+	    }),
+	    html.Img(src="/video_feed")],
+	    className="one-half column",
+	    ),
+5e7815d3b18ea6383cf1bd0f4bc1347e|file:///home/evangelos/workspace/Python/FastApiVideoStreaming/stream-webcam-fast-api/app.py|41|6|V|python
+	    ),
+696ab29e0f9e7c1285f843af94cc2859|file:///home/evangelos/workspace/Python/FastApiVideoStreaming/stream-webcam-fast-api/app.py|40|44|V|python
+	                className="one-half column",
+6d83bd65ec6055b1a4dd3c7e67bbf70f|file:///home/evangelos/workspace/Python/FastApiVideoStreaming/stream-webcam-fast-api/app.py|41|24|v|python
+	half 
+1afd32818d1c9525f82aff4c09efd254|file:///home/evangelos/workspace/Python/FastApiVideoStreaming/stream-webcam-fast-api/app.py|41|24|v|python
+	column
+2688b47b88b607581d586e8f973ea946|file:///home/evangelos/workspace/Python/FastApiVideoStreaming/stream-webcam-fast-api/app.py|43|16|V|python
+	                        
+5fa1e732ffb82c7b0f6d14a19192c5f2|file:///home/evangelos/workspace/Python/FastApiVideoStreaming/stream-webcam-fast-api/app.py|37|17|v|python
+	html.Div(
+	                    [
+	                html.H2("Cartridge Counting", style={
+	                'textAlign': 'center',
+	                }),
+	                html.Img(src="/video_feed"),
+	                ],
+	                className="one-half column",
+	                ),
+546b36290da37c61814b3c2e2e1a7a2b|file:///home/evangelos/workspace/Python/FastApiVideoStreaming/stream-webcam-fast-api/app.py|56|26|V|python
+	            className="row",
+ea5a1cbe764918679997181a3ea281d3|file:///home/evangelos/workspace/Python/FastApiVideoStreaming/stream-webcam-fast-api/app.py|58|5|V|python
+	    }
+9a417316915d26d0cec75d1e1fb38b1a|file:///home/evangelos/workspace/Python/FastApiVideoStreaming/stream-webcam-fast-api/app.py|57|5|V|python
+	        'textAlign': 'center',
+95e46598f51e0aa0c7ec058ed53de13a|file:///home/evangelos/workspace/Python/FastApiVideoStreaming/stream-webcam-fast-api/app.py|56|1|V|python
+	            style={'columnCount': 2}
+faf0c8d7dad34a12363a3da4aeb637b5|file:///home/evangelos/workspace/Python/FastApiVideoStreaming/stream-webcam-fast-api/app.py|48|47|v|python
+	style={
+	                'textAlign': 'center',
+	
+d93f5c78a5996ba324ec60bd1e75347b|file:///home/evangelos/workspace/Python/FastApiVideoStreaming/stream-webcam-fast-api/app.py|53|23|V|python
+	                className="six columns",
+772987770a5482b3725a4f8e14a22cdd|file:///home/evangelos/workspace/Python/FastApiVideoStreaming/stream-webcam-fast-api/app.py|45|1|V|python
+	                'textAlign': 'center',
+e1378ea420c1c75fb911bd955bdb6544|file:///home/evangelos/workspace/Python/FastApiVideoStreaming/stream-webcam-fast-api/app.py|43|1|V|python
+	                'height': '50%',
+	                'width': '50%'
+96ce7ef33abfdc1bb6bb35ea1509b803|file:///home/evangelos/workspace/Python/FastApiVideoStreaming/stream-webcam-fast-api/app.py|43|3|v|python
+	display: block
+9b2237ca34a6a87a171b50cef0b5c68a|file:///home/evangelos/workspace/Python/FastApiVideoStreaming/stream-webcam-fast-api/app.py|44|3|v|python
+	margin-left: auto
+2a46327f85ce731b033d09093210d11c|file:///home/evangelos/workspace/Python/FastApiVideoStreaming/stream-webcam-fast-api/app.py|45|3|v|python
+	margin-right: auto
+b7788692e193eb4cd6cb244ca7904fa6|file:///home/evangelos/workspace/Python/FastApiVideoStreaming/stream-webcam-fast-api/app.py|43|3|v|python
+	"display: block"
+31ec93fb181acdb44e011f69d441b4e4|file:///home/evangelos/workspace/Python/FastApiVideoStreaming/stream-webcam-fast-api/app.py|43|3|v|python
+	""display: block""
+911d499f9ea6d91b042a10e7e74daa23|file:///home/evangelos/workspace/Python/FastApiVideoStreaming/stream-webcam-fast-api/app.py|43|1|V|python
+	                  'display': 'block',
+ff348f109bf581d37c90c393f0b87f9f|file:///home/evangelos/workspace/Python/FastApiVideoStreaming/stream-webcam-fast-api/app.py|53|26|v|python
+	Cartridge
+bf87751378a125423d6e60e4ffff6daa|file:///home/evangelos/workspace/Python/FastApiVideoStreaming/stream-webcam-fast-api/app.py|53|26|v|python
+	Counting
+4f815c687ab9b9c434fdbb12d54669ce|file:///home/evangelos/workspace/Python/FastApiVideoStreaming/stream-webcam-fast-api/app.py|50|1|V|python
+	                , style={'display': 'inline-block', 'vertical-align': 'top', 'margin-left': '3vw', 'margin-top': '3vw'}
+e6dec152d6a941fccb0a5e8cc2579cc3|file:///home/evangelos/workspace/Python/FastApiVideoStreaming/stream-webcam-fast-api/app.py|64|54|v|python
+	vertical
+92306297c593790b3ef8ddb77e791efd|file:///home/evangelos/workspace/Python/FastApiVideoStreaming/stream-webcam-fast-api/app.py|61|17|V|python
+	                # 'textAlign': 'center',
+9a3678bba1fb9363abf60af9a2167146|file:///home/evangelos/workspace/Python/FastApiVideoStreaming/stream-webcam-fast-api/app.py|44|17|V|python
+	                  # 'margin-left': 'auto',
+91ee2d8d9905e2043ef90961bd2de613|file:///home/evangelos/workspace/Python/FastApiVideoStreaming/stream-webcam-fast-api/app.py|44|17|V|python
+	                  # 'margin-right': 'auto',
+4505cad087312551a6fbbe6ebe163e0f|file:///home/evangelos/workspace/Python/FastApiVideoStreaming/stream-webcam-fast-api/app.py|61|54|v|python
+	horizontal
+03fdad155b7548884584c7c39b0c5cd2|file:///home/evangelos/workspace/Python/FastApiVideoStreaming/stream-webcam-fast-api/app.py|61|38|v|python
+	inline
+d2c09deb3dc176df19911a2eeb8f785a|file:///home/evangelos/workspace/Python/FastApiVideoStreaming/stream-webcam-fast-api/app.py|33|1|V|python
+	                    [
+c82e75b79fd42234fcbbec10c25127c7|file:///home/evangelos/workspace/Python/FastApiVideoStreaming/stream-webcam-fast-api/app.py|33|1|V|python
+	                html.H2("Tilt Detection", style={
+d71b92ea4e7fa2b312df665c36e48f62|file:///home/evangelos/workspace/Python/FastApiVideoStreaming/stream-webcam-fast-api/app.py|33|1|V|python
+	                }),
+dd221b810261cce256ad3c84049c33ca|file:///home/evangelos/workspace/Python/FastApiVideoStreaming/stream-webcam-fast-api/app.py|33|1|V|python
+	                html.Img(src="/video_feed", style={
+0528d932daad2b3e87ca7e477afafded|file:///home/evangelos/workspace/Python/FastApiVideoStreaming/stream-webcam-fast-api/app.py|33|1|V|python
+	                'height': '50%',
+a07137957af78771c98def98f841fb92|file:///home/evangelos/workspace/Python/FastApiVideoStreaming/stream-webcam-fast-api/app.py|33|1|V|python
+	                'width': '50%'
+2873188dbe8f528939e135feada646f0|file:///home/evangelos/workspace/Python/FastApiVideoStreaming/stream-webcam-fast-api/app.py|33|1|V|python
+	            ],
+2477e9c701e631560fb6e71bde9369f1|file:///home/evangelos/workspace/Python/FastApiVideoStreaming/stream-webcam-fast-api/app.py|33|1|V|python
+	            )
+d02f072cfcc55e95f95ab3d23578fac0|file:///home/evangelos/workspace/Python/FastApiVideoStreaming/stream-webcam-fast-api/app.py|33|1|V|python
+	    ],
+0ab22782df9c164188572e214c0cc517|file:///home/evangelos/workspace/Python/FastApiVideoStreaming/stream-webcam-fast-api/app.py|33|1|V|python
+	    style={'columnCount': 2}
+4ec2375d73c6f407b2053bb4ae3e77d2|file:///home/evangelos/workspace/Python/FastApiVideoStreaming/stream-webcam-fast-api/app.py|42|14|V|python
+	        html.Img(src="/video_feed")
+deb2682e50af3e3408b5b73f44eb9eba|file:///home/evangelos/workspace/Python/FastApiVideoStreaming/stream-webcam-fast-api/app.py|36|5|v|python
+	html.Div(children=[
+	        html.H2("Counting", style={
+	                'textAlign': 'center',
+	        }),
+	        html.Div([
+	            html.Img(src="/video_feed")
+	        ], style={'display': 'inline-block', 'vertical-align': 'top', 'margin-left': '3vw', 'margin-top': '3vw'}),
+	    ]),

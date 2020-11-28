@@ -1,0 +1,86 @@
+{
+  "diagnostics": {
+    "%2Fhome%2Fevangelos%2Fworkspace%2FMinimalBlockChain%2Fsrc": [
+      ":C"
+    ],
+    "%2Fboot%2Floader%2Fentries": [
+      " "
+    ],
+    "%2Fhome%2Fevangelos%2Fworkspace%2FHaskell": [
+      " ",
+      "kj",
+      "kk",
+      "j"
+    ]
+  },
+  "commands": {
+    "%2Fhome%2Fevangelos%2Fworkspace%2FChannel_Charting%2Freports%2Fmain_report": [
+      "latex"
+    ],
+    "%2Fhome%2Fevangelos%2Fvimwiki": [
+      " "
+    ],
+    "%2Fhome%2Fevangelos%2Fgo%2Fsrc%2Floops": [
+      "go"
+    ],
+    "%2Fhome%2Fevangelos%2Fgo%2Fsrc%2Fgithub": {
+      "com%2Fevangelos%2Fhello": [
+        "doc",
+        "go"
+      ]
+    },
+    "%2Fhome%2Fevangelos%2Fworkspace%2FRust%2Fguessing_game": [
+      "rls"
+    ],
+    "%2Fhome%2Fevangelos%2Fworkspace%2FChannel_Charting%2Fsrc%2Fmodels": [
+      "pytho"
+    ],
+    "%2Fhome%2Fevangelos%2Fworkspace%2FChannel_Charting": [
+      "python.use",
+      "python"
+    ],
+    "%2Fhome%2Fevangelos%2F": {
+      "config%2Fcoc": [
+        "pytho"
+      ]
+    },
+    "%2Fhome%2Fevangelos": [
+      "c"
+    ],
+    "%2Fhome%2Fevangelos%2Fworkspace%2FMotorola%2Fbst%2Flib": [
+      "c"
+    ],
+    "%2Fhome%2Fevangelos%2Fworkspace%2FMotorola%2Fbst_micro": [
+      "c"
+    ]
+  },
+  "extensions": {
+    "%2Fhome%2Fevangelos": [
+      "jjjjjjj",
+      "v"
+    ],
+    "%2Fhome%2Fevangelos%2Fworkspace%2Fgo%2Fsurface": [
+      "v"
+    ],
+    "%2Fhome%2Fevangelos%2F": {
+      "config%2Fnvim": [
+        "jj"
+      ]
+    }
+  },
+  "marketplace": {
+    "%2Fhome%2Fevangelos%2Fgo%2Fsrc%2Fgithub": {
+      "com%2Fevangelos%2Fhello": [
+        "go"
+      ]
+    }
+  },
+  "symbols": {
+    "%2Fhome%2Fevangelos%2F": {
+      "config%2Fnvim": [
+        "plu",
+        "v"
+      ]
+    }
+  }
+}
