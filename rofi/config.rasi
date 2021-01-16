@@ -1,0 +1,10 @@
+configuration {
+    width: 40;
+    columns: 1;
+    lines: 12;
+    modi: "run,ssh,drun";
+    font: "Iosevka 16";
+    icon-theme: "Papirus";
+    show-icons: true;         
+}
+@import "/usr/share/rofi/themes/gruvbox-dark.rasi"

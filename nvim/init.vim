@@ -1,8 +1,9 @@
 source $HOME/.config/nvim/plugins.vimrc
+source $HOME/.config/nvim/keybindings.vimrc
 
 filetype plugin indent on
 
-" let g:python3_host_prog="/home/evangelos/.virtual_envs/neovim/bin/python3.8"
+" let g:python3_host_prog="/home/evangelos/.virtualenvs/neovim/bin/python"
 
 "Use 24-bit (true-color) mode in Vim/Neovim when outside tmux.
 "If you're using tmux version 2.2 or later, you can remove the outermost $TMUX check and use tmux's 24-bit color support
@@ -20,7 +21,8 @@ if (empty($TMUX))
   endif
 endif
 
-colorscheme gruvbox
+
+colorscheme doom-one
 set background=dark " use dark mode
 set t_Co=256
 
@@ -64,58 +66,46 @@ set wildmenu
 set lazyredraw          " redraw only when we need to.
 " turn off search highlight
 
-" MOVEMENT
-" Move vertically by visual line
-nnoremap  j gj
-nnoremap  k gk
-" move to beginning/end of line
-noremap B ^
-noremap E $
-" $/^ doesn't do anything
-noremap $ <nop>
-noremap ^ <nop>
-
-"use , as leader
-let mapleader = " "
-"leader save and quit
-nnoremap <leader>fs :w<cr>
-nnoremap <leader>fq :wq<cr>
-nnoremap <leader>fx :q!<cr>
-
-" edit vimrc/zshrc and load vimrc bindings
-nnoremap <leader>ev :e $MYVIMRC<CR>
-nnoremap <leader>sv :source $MYVIMRC<CR>
 
 "Better split
 set splitbelow
 set splitright
 
-nnoremap <leader>ws :split<cr>
-nnoremap <leader>wv :vsplit<cr>
-nnoremap <leader>wc :close<cr>
-
-" Better Window movement
-nnoremap <C-J> <C-W><C-J>
-nnoremap <C-K> <C-W><C-K>
-nnoremap <C-L> <C-W><C-L>
-nnoremap <C-H> <C-W><C-H>
-
-" Better Window resize
-nnoremap <M-j> :resize -2<cr>
-nnoremap <M-k> :resize +2<cr>
-nnoremap <M-h> :vertical resize -2<cr>
-nnoremap <M-l> :vertical resize +2<cr>
-"FZF
-nnoremap <C-f> :Files<cr>
-nnoremap <C-t> :Vista coc<cr>
-nnoremap <C-s> :Rg<cr>
-nnoremap <C-b> :Buffers<cr>
 " Reverse the layout to make the FZF list top-down
 let $FZF_DEFAULT_OPTS='--layout=reverse'
 
 " Using the custom window creation function
-"let g:fzf_layout = { 'splitbelow': 'call FloatingFZF()' }
-let g:fzf_layout = { 'down': '~30%' }
+function! OpenFloatingWin()
+  let height = &lines - 3
+  let width = float2nr(&columns - (&columns * 2 / 10))
+  let col = float2nr((&columns - width) / 2)
+
+  "Set the position, size, etc. of the floating window.
+  "The size configuration here may not be so flexible, and there's room for further improvement.
+  let opts = {
+        \ 'relative': 'editor',
+        \ 'row': height * 0.1,
+        \ 'col': col + 10,
+        \ 'width': float2nr(width * 0.9),
+        \ 'height': float2nr(height * 0.9)
+        \ }
+
+  let buf = nvim_create_buf(v:false, v:true)
+  let win = nvim_open_win(buf, v:true, opts)
+
+  "Set Floating Window Highlighting
+  call setwinvar(win, '&winhl', 'Normal:Pmenu')
+
+  setlocal
+        \ buftype=nofile
+        \ nobuflisted
+        \ bufhidden=hide
+        \ nonumber
+        \ norelativenumber
+        \ signcolumn=no
+endfunction
+
+let g:fzf_layout = { 'window': 'call OpenFloatingWin()' }
 
 " CoC setup
 " Use tab for trigger completion with characters ahead and navigate.
@@ -144,37 +134,6 @@ endfunction
 " Highlight symbol under cursor on CursorHold
 autocmd CursorHold * silent call CocActionAsync('highlight')
 
-" Remap keys for gotos
-nmap <silent> gd <Plug>(coc-definition)
-nmap <silent> gy <Plug>(coc-type-definition)
-nmap <silent> gi <Plug>(coc-implementation)
-nmap <silent> gr <Plug>(coc-references)
-
-" Symbol renaming.
-nmap <leader>rn <Plug>(coc-rename)
-
-" Formatting selected code.
-xmap <leader>fo  <Plug>(coc-format-selected)
-nmap <leader>fo  <Plug>(coc-format-selected)
-
-augroup mygroup
-  autocmd!
-  " Setup formatexpr specified filetype(s).
-  autocmd FileType typescript,json setl formatexpr=CocAction('formatSelected')
-  " Update signature help on jump placeholder.
-  autocmd User CocJumpPlaceholder call CocActionAsync('showSignatureHelp')
-augroup end
-
-" Applying codeAction to the selected region.
-" Example: `<leader>aap` for current paragraph
-xmap <leader>a  <Plug>(coc-codeaction-selected)
-nmap <leader>a  <Plug>(coc-codeaction-selected)
-
-" Remap keys for applying codeAction to the current buffer.
-nmap <leader>ac  <Plug>(coc-codeaction)
-" Apply AutoFix to problem on the current line.
-nmap <leader>qf  <Plug>(coc-fix-current)
-
 " Map function and class text objects
 " NOTE: Requires 'textDocument.documentSymbol' support from the language server.
 xmap if <Plug>(coc-funcobj-i)
@@ -195,48 +154,6 @@ command! -nargs=? Fold :call     CocAction('fold', <f-args>)
 " Add `:OR` command for organize imports of the current buffer.
 command! -nargs=0 OR   :call     CocAction('runCommand', 'editor.action.organizeImport')
 
-" Add (Neo)Vim's native statusline support.
-" NOTE: Please see `:h coc-status` for integrations with external plugins that
-" provide custom statusline: lightline.vim, vim-airline.
-" set statusline^=%{coc#status()}%{get(b:,'coc_current_function','')}
-
-" Mappings for CoCList
-" Show all diagnostics.
-nnoremap <silent><nowait> ,a  :<C-u>CocList diagnostics<cr>
-" Manage extensions.
-nnoremap <silent><nowait> ,e  :<C-u>CocList extensions<cr>
-" Show commands.
-nnoremap <silent><nowait> ,c  :<C-u>CocList commands<cr>
-" Find symbol of current document.
-nnoremap <silent><nowait> ,o  :<C-u>CocList outline<cr>
-" Search workspace symbols.
-nnoremap <silent><nowait> ,s  :<C-u>CocList -I symbols<cr>
-" Do default action for next item.
-nnoremap <silent><nowait> ,j  :<C-u>CocNext<CR>
-" Do default action for previous item.
-nnoremap <silent><nowait> ,k  :<C-u>CocPrev<CR>
-" Resume latest coc list.
-nnoremap <silent><nowait> ,p  :<C-u>CocListResume<CR>
-
-" Use <C-l> for trigger snippet expand.
-imap <C-l> <Plug>(coc-snippets-expand)
-
-" Use <C-j> for select text for visual placeholder of snippet.
-vmap <C-j> <Plug>(coc-snippets-select)
-
-" Use <C-j> for jump to next placeholder, it's default of coc.nvim
-let g:coc_snippet_next = '<c-j>'
-
-" Use <C-k> for jump to previous placeholder, it's default of coc.nvim
-let g:coc_snippet_prev = '<c-k>'
-
-" Use <C-j> for both expand and jump (make expand higher priority.)
-" imap <C-j> <Plug>(coc-snippets-expand-jump)
-" popup mode
-" let g:Lf_WindowPosition = 'popup'
-" let g:Lf_PreviewInPopup = 1
-" let g:Lf_StlSeparator = { 'left': "\ue0b0", 'right': "\ue0b2", 'font': "DejaVu Sans Mono for Powerline" }
-
 " Writing Mode
 nnoremap <leader>g :Goyo<CR>
 autocmd! User GoyoEnter Limelight
@@ -253,15 +170,15 @@ let airline#extensions#coc#stl_format_err = '%E{[%e(#%fe)]}'
 let airline#extensions#coc#stl_format_warn = '%W{[%w(#%fw)]}'
 
 " Slime
-" let g:slime_target = "tmux"
-" let g:slime_default_config = {"socket_name": get(split($TMUX, ","), 0), "target_pane": ":.1"}
+let g:slime_target = "tmux"
+let g:slime_default_config = {"socket_name": get(split($TMUX, ","), 0), "target_pane": ":.1"}
 " let g:slime_python_ipython = 1
-let g:slime_target = "x11"
+" let g:slime_target = "x11"
+" let g:slime_target = "neovim""
 
 " Undo tree
 let g:undotree_HighlightChangedWithSign = 1
 let g:undotree_WindowLayout             = 4
-nnoremap <Leader>u :UndotreeToggle<CR>
 
 "Rainbow parentheses
 " Activation based on file type
@@ -279,6 +196,8 @@ autocmd VimResized * wincmd =
 
 "vim-sneak label mode
 let g:sneak#label = 1
-" Smart edit
-let g:suda_smart_edit = 1
+
+"Neoterm
+let g:neoterm_default_mod = "belowright"
+
 

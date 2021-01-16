@@ -1,20 +1,19 @@
 call plug#begin('~/.local/share/nvim/plugged')
 
-"Parinfer
-" Plug 'eraserhd/parinfer-rust'
 " Tmux
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'tmux-plugins/vim-tmux'
 
 "Term and Repls
 Plug 'jpalardy/vim-slime'
-" Plug 'urbainvaes/vim-ripple'
-" Plug 'hkupty/iron.nvim'
-" Plug 'sjl/tslime.vim'
+Plug 'kassio/neoterm'
+
+"MOVEMENT
+Plug 'justinmk/vim-sneak'
+
 
 Plug 'tpope/vim-repeat'
 Plug 'jiangmiao/auto-pairs'
-"Plug 'vim-scripts/paredit.vim'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-sleuth'
 Plug 'honza/vim-snippets'
@@ -36,16 +35,16 @@ Plug 'justinmk/vim-dirvish'
 Plug 'kristijanhusak/vim-dirvish-git'
 
 "Easy commend
-"Plug 'scrooloose/nerdcommenter'
 Plug 'tpope/vim-commentary'
 "Coloschemes
 Plug 'gruvbox-community/gruvbox'
 Plug 'joshdick/onedark.vim'
+Plug 'romgrk/doom-one.vim'
 
 "Git
 Plug 'airblade/vim-gitgutter'
 
-"CoC
+"LSP
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 "sort imports
@@ -56,18 +55,18 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'liuchengxu/vista.vim'
 
 "Syntax Highlighting
-Plug 'sheerun/vim-polyglot'
-Plug 'numirias/semshi', {'do': ':UpdateRemotePlugins'}
-Plug 'Vimjas/vim-python-pep8-indent'
-Plug 'neovimhaskell/haskell-vim'
+" Plug 'sheerun/vim-polyglot'
+" Plug 'numirias/semshi', {'do': ':UpdateRemotePlugins'}
+" Plug 'Vimjas/vim-python-pep8-indent'
+" Plug 'neovimhaskell/haskell-vim'
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}  " We recommend updating the parsers on update
+
 
 "Personal Wiki
 Plug 'vimwiki/vimwiki'
 "Writing
 Plug 'junegunn/goyo.vim'
 Plug 'junegunn/limelight.vim'
-"Sudo
-" Plug 'lambdalisue/suda.vim'
 "Better start screen
 Plug 'mhinz/vim-startify'
 " Go to root of project
